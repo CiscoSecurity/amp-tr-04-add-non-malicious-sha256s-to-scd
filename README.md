@@ -2,7 +2,8 @@
 
 ### AMP for Endpoints Add SHA256(s) to Simple Custom Detection List:
 
-Script takes either a SHA256 or file as a command line argument. If neither is provided it will prompt user to enter a SHA256 or file. It validates the provided input and prompts user for which Simple Custom Detection (SCD) List to add SHA256s to and queries the SCD List for existing list items. The user privded SHA256s are compared agaist the existing list items and any duplcates are removed. The disposition for remaining SHA256s are looked up using Threat Response's /deliberate/observables endpoint. Malicious SHA256s are removed from the remaining list of user provided SHA256s. The user is prompted to add the SHA256s to the SCD List, if the users says response `y` the SHA256s are then added to the SCD List
+Script takes either a SHA256 or file as a command line argument. If neither is provided it will prompt the user to enter a SHA256 or file. It validates the provided input and prompts the user for which Simple Custom Detection (SCD) List to add SHA256s to and queries the SCD List for existing list items. The user provided SHA256s are compared against the existing list items and any duplicates are removed. The disposition for remaining SHA256s are looked up using Threat Response's /deliberate/observables endpoint. Malicious SHA256s are removed from the remaining list of user provided SHA256s. The user is prompted to add the SHA256s to the SCD List, if the users says response y the SHA256s are then added to the SCD List
+
 
 ### Before using you must update the following:
 - amp_client_id
